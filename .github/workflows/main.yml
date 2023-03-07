@@ -170,13 +170,11 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/')
         with:
           body: |  
-            # ARPL 汉化版  
-            * 自动同步仅汉化(备份原英文版为: menu_en.sh).  
-            * 修改PAT国内加速.  
+            # ARPL 自用版    
+            * 修改PAT国内加速.
+            * 添加github下载代理.
             * 默认开启 Telnet.  
-            > 汉化作者: Ing.  QQ交流群: 21609194 QQ频道: 0pg8m22666  
-            > `关于Console(显示器)层面 中文显示方块的问题. 目前没有解决的计划. 请使用 web / ssh 或者 ./menu_en.sh 进行操作.`  
-            > `因为linux核心机制不接受任何的unicode补丁在Console层面.`  
+            > `原作者: Ing.  QQ交流群: 21609194 QQ频道: 0pg8m22666`  
           files: |
             arpl-${{ steps.build.outputs.VERSION }}.img.zip
             arpl-${{ steps.build.outputs.VERSION }}.vmdk-dyn.zip
