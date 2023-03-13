@@ -174,7 +174,7 @@ jobs:
             * 修改PAT国内加速.
             * 添加github下载代理.
             * 默认开启 Telnet.  
-            > `原作者: Ing.  QQ交流群: 21609194 QQ频道: 0pg8m22666`  
+            > `原作者: Ing. https://github.com/wjz304`  
           files: |
             arpl-${{ steps.build.outputs.VERSION }}.img.zip
             arpl-${{ steps.build.outputs.VERSION }}.vmdk-dyn.zip
